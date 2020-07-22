@@ -1,0 +1,33 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*", "src/*", "types/*"]
+    },
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types",
+      "./node_modules/vue/types",
+      "./node_modules/vuex/types"
+    ],
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es7",
+      "es2015.promise"
+    ]
+  }
+}

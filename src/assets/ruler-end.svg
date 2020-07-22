@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="42px" viewBox="0 0 38 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>flip1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="5.43416341%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#02DFF6" offset="0%"></stop>
+            <stop stop-color="#0E8AEC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#02DEF5" offset="0%"></stop>
+            <stop stop-color="#0E90ED" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0.582073547,6.92789581 L9.07199355,0.314247263 C9.61765203,-0.110820752 10.382348,-0.110820752 10.9280065,0.314247263 L19.4179265,6.92789581 C19.7852253,7.21402167 20,7.65358219 20,8.1191748 L20,22.48992 C20,23.3239142 19.3239142,24 18.48992,24 L1.51008,24 C0.676085845,24 3.24179432e-16,23.3239142 0,22.48992 L0,8.1191748 C1.65025956e-16,7.65358219 0.214774671,7.21402167 0.582073547,6.92789581 Z" id="path-3"></path>
+        <filter x="-77.5%" y="-47.9%" width="255.0%" height="229.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.218582203   0 0 0 0 0.391332654  0 0 0 0.803212413 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-64.3%" y="-37.5%" width="228.6%" height="175.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.367353311   0 0 0 0 0.603317482  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="01-示例中心设计" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="flip1" transform="translate(9.000000, 5.000000)">
+            <g id="Rectangle-19" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <path stroke="url(#linearGradient-2)" stroke-width="1.22707699" d="M18.48992,23.3864615 L1.51008,23.3864615 C1.2625069,23.3864615 1.03837152,23.2861127 0.876129421,23.1238706 C0.713887319,22.9616285 0.613538493,22.7374931 0.613538493,22.48992 L0.613538493,8.1191748 C0.613538493,7.84275031 0.741051212,7.58178118 0.95911826,7.41190693 L9.44903826,0.798258385 C9.61101825,0.672075958 9.80550912,0.608984745 10,0.608984745 C10.1944909,0.608984745 10.3889818,0.672075958 10.5509617,0.798258385 L19.0408817,7.41190693 C19.2589488,7.58178118 19.3864615,7.84275031 19.3864615,8.1191748 L19.3864615,22.48992 C19.3864615,22.7374931 19.2861127,22.9616285 19.1238706,23.1238706 C18.9616285,23.2861127 18.7374931,23.3864615 18.48992,23.3864615 Z" stroke-linejoin="square" fill-opacity="0.71" fill="url(#linearGradient-1)" fill-rule="evenodd"></path>
+            </g>
+            <g id="8" fill="#FFFFFF" fill-opacity="1">
+                <use filter="url(#filter-6)" xlink:href="#text-5"></use>
+            </g>
+        </g>
+    </g>
+</svg>
