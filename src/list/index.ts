@@ -1,7 +1,7 @@
-import List from './list.vue';
-import Textlist from './textlist.vue';
+import Klist from './klist.vue';
+import Ktextlist from './ktextlist.vue';
 
 export {
-  List,
-  Textlist
+  Klist,
+  Ktextlist
 }

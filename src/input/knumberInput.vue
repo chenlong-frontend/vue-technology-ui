@@ -1,7 +1,7 @@
 <template>
   <div class="kinput-container">
     <div class="kselect-border"></div>
-    <input placeholder="请输入俯仰角" class="kinput" />
+    <input placeholder="" class="kinput" />
     <div class="kinput-number-adjust">
       <span class="kinput-number-increase font_family icon-icon-arowfill"></span>
       <span class="kinput-number-reduce font_family icon-icon-arowfill"></span>

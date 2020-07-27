@@ -82,6 +82,7 @@ export default class KButton extends Vue {
     line-height: 22px;
     box-sizing: border-box;
     color: #0CF1FF;
+    outline: none;
     background: rgba(0,97,158,0.15);
     box-shadow: inset 0 0 9px 0 rgba($color: #0B7DC5, $alpha: 0.5);;
     border: 1px solid transparent;

@@ -1,4 +1,4 @@
-import Button from './button.vue';
-import Ripple from './ripple.vue';
+import Kbutton from './Kbutton.vue';
+import Kripple from './kripple.vue';
 
-export {Button, Ripple}
+export {Kbutton, Kripple}

@@ -20,8 +20,8 @@
           <slot></slot>
         </div>
         <div v-if="footer" class="kdialog-footer">
-          <button type="warn" text="取消" :styles="{marginRight: '14px'}" @click="onCancel"></button>
-          <button text="确定" @click="onConfirm"></button>
+          <kbutton type="warn" text="取消" :styles="{marginRight: '14px'}" @click="onCancel"></kbutton>
+          <kbutton text="确定" @click="onConfirm"></kbutton>
         </div>
       </div>
     </div>
@@ -31,14 +31,14 @@
 
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
-import { Button } from '../../ksign-ui'
+import { Kbutton } from '../../ksign-ui'
 import Popup from '../utils/popup/index'
 const cornerImage = require('../assets/upleft.png');
 const topImage = require('../assets/middle.png');
 const sideImage = require('../assets/above.png');
 
 @Component({
-  components:{Button}
+  components:{Kbutton}
 })
 export default class Dialog extends Popup {
   startX:number
@@ -257,7 +257,7 @@ export default class Dialog extends Popup {
     }
 
     .kdialog-border-img {
-      position: absolute;;
+      position: absolute;
     }
     .kdialog-corner-top {
       top: 0;

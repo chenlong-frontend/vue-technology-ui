@@ -1,5 +1,5 @@
-import FormItem from './formItem.vue';
+import KformItem from './kformItem.vue';
 
 export {
-  FormItem
+  KformItem
 }

@@ -1,5 +1,5 @@
-import Paination from './pagination.vue';
+import Kpaination from './kpagination.vue';
 
 export {
-  Paination
+  Kpaination
 }

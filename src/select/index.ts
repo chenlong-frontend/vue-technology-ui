@@ -1,7 +1,7 @@
-import Select from './select.vue';
-import Option from './option.vue';
+import Kselect from './kselect.vue';
+import Koption from './Koption.vue';
 
 export {
-  Select,
-  Option
+  Kselect,
+  Koption
 }

@@ -1,5 +1,5 @@
-import Ruler from './ruler.vue'
+import Kruler from './Kruler.vue'
 
 export {
-  Ruler
+  Kruler
 }

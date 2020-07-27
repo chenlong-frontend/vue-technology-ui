@@ -1,7 +1,7 @@
-import Card from './Card.vue'
-import CardText from './CardText.vue'
+import Kcard from './kcard.vue'
+import KcardText from './kcardText.vue'
 
 export {
-  Card,
-  CardText
+  Kcard,
+  KcardText
 }

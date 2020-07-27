@@ -1,9 +1,9 @@
-import Input from './input.vue';
-import NumberInput from './numberInput.vue';
-import Search from './search.vue'
+import Kinput from './kinput.vue';
+import KnumberInput from './knumberInput.vue';
+import Ksearch from './ksearch.vue'
 
 export {
-  Input,
-  NumberInput,
-  Search
+  Kinput,
+  KnumberInput,
+  Ksearch
 }

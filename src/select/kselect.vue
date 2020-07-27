@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch, Provide } from 'vue-property-decorator';
-import Dropdown from './selectDropdown.vue';
+import Dropdown from './kselectDropdown.vue';
 import Emitter from '../utils/emitter';
 import { addResizeListener, removeResizeListener } from '../utils/resize-event';
 import Clickoutside from '../utils/clickoutside';

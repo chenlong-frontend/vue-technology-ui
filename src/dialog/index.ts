@@ -1,4 +1,6 @@
-import Dialog from './kdialog.vue'
+import Kdialog from './kdialog.vue'
+import kbasedialog from './kbasedialog.vue'
 export {
-  Dialog
+  Kdialog,
+  kbasedialog
 }

@@ -122,7 +122,6 @@ export default class Popup extends Emmiter {
     if (getComputedStyle(dom).position === 'static') {
       dom.style.position = 'absolute';
     }
-
     dom.style.zIndex = PopupManager.nextZIndex() + '';
     this.opened = true;
 
