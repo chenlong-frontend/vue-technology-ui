@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="34px" viewBox="0 0 44 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>编组 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,0 L38,0 C40.209139,-4.05812251e-16 42,1.790861 42,4 L42,24.6857673 C42,24.9356792 41.906424,25.1765336 41.7377017,25.3608941 L35.959069,31.6751268 C35.7696362,31.8821174 35.5019559,32 35.2213673,32 L4,32 C1.790861,32 2.705415e-16,30.209139 0,28 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-1"></path>
+        <filter x="-9.5%" y="-12.5%" width="119.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="3" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0071923497   0 0 0 0 0.157116781   0 0 0 0 0.405429121  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="标签/42x32/退出" transform="translate(1.000000, 1.000000)">
+            <g id="编组-15">
+                <g id="矩形">
+                    <use fill-opacity="0.9" fill="#0B2C63" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#2165D4" stroke-width="1" xlink:href="#path-1"></use>
+                </g>
+                <path d="M4.45454545,1.45454545 L7.1574998,1.45454545 C7.48887065,1.45454545 7.7574998,1.7231746 7.7574998,2.05454545 C7.7574998,2.22518985 7.6848389,2.38776158 7.55769869,2.50158108 L2.45474434,7.06988958 C2.20785338,7.29091332 1.82853357,7.2699438 1.60750983,7.02305284 C1.50900857,6.91302361 1.45454545,6.77053241 1.45454545,6.62285395 L1.45454545,4.45454545 C1.45454545,2.79769121 2.79769121,1.45454545 4.45454545,1.45454545 Z" id="矩形备份-3" fill="#946B05"></path>
+            </g>
+        </g>
+    </g>
+</svg>

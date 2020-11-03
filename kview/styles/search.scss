@@ -1,0 +1,62 @@
+@import './common/var.scss';
+@import './mixins/mixins.scss';
+
+/* search
+-------------------------- */
+@include b(search) {
+  position: relative;
+
+  @include e(icon) {
+    position: absolute;
+    color: $--color-white;
+    opacity: 0.2;
+    top: 6px;
+    left: 10px;
+    font-size: 14px;
+    z-index: 1;
+  }
+
+  @include e(input) {
+    position: relative;
+    flex: 1;
+
+    &:hover {
+      @include ee(clear) {
+        display: inline;
+      }
+    }
+  }
+
+  @include e(clear) {
+    position: absolute;
+    display: none;
+    color: $--color-white;
+    top: 6px;
+    right: 10px;
+    font-size: 14px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  @include e(flex) {
+    display: flex;
+  }
+
+  @include e(text) {
+    width: 44px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    margin-left: -1px;
+    text-align: center;
+    color: $--search-text-color;
+    text-shadow: 0 1px 0 $--search-text-shadow-color;
+    background-image: $--search-background-image;
+    border-radius: 0px 1px 1px 0px;
+    z-index: 9;
+    cursor: pointer;
+    &:hover {
+      background-image: $--search-background-image-hover;
+    }
+  }
+}

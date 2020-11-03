@@ -1,0 +1,45 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+
+@include b(message) {
+  min-width: 110px;
+  box-sizing: border-box;
+  border: 1px solid $--message-border-color;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform .4s, top 0.4s;
+  overflow: hidden;
+  background:  $--message-background;
+  box-shadow: inset 0 0 14px 0 $--message-box-shadow-color;
+  padding: 11px 24px;
+  display: flex;
+  align-items: center;
+  color: $--color-white-text;
+  @include m(success) {
+    color: $--message-success-color;
+  }
+  
+  @include m(warning) {
+    color: $--message-warning-color;
+  }
+  
+  @include m(error) {
+    color: $--message-error-color;
+  }
+}
+
+@include e(content) {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.kview-message-fade-enter,
+.kview-message-fade-leave-active {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}

@@ -1,0 +1,140 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+
+/* card-shadow
+-------------------------- */
+@include b(card-shadow) {
+  position: absolute;
+  width: 240px;
+  height: 200px;
+  border: 1px solid $--card-shadow-border-color;
+  background-image: $--card-shadow-background-image;
+  box-shadow: 0 0 55px 1px $--card-shadow-border-color;
+  border-radius: 4px;
+}
+
+/* card-image
+-------------------------- */
+@include b(card-image) {
+  position: relative;
+  width: 100%;
+
+  @include e(label) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+  }
+
+  @include e(corner) {
+    border: 14px solid $--card-image-corner-border-color;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    opacity: 0.9;
+  }
+
+  @include e(text) {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    font-size: 12px;
+    color: $--color-white-text;
+  }
+
+  @include e(content) {
+    width: 100%;
+    height: 168px;
+    text-align: center;
+    background-color: rgba($color: $--color-black, $alpha: 0.6);
+  }  
+  @include e(pictrue) {
+    height: 100%;
+  }
+
+  @include e(footer) {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 25px 0 10px;
+    box-sizing: border-box;
+    background-image: $--card-image-background-image;
+  }
+
+  @include e(title) {
+    color: $--color-white-text;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @include e(tool) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+  }
+}
+
+/* card-item
+-------------------------- */
+@include b(card-item) {
+  position: relative;
+  background-image: $--card-item-background;
+  border: 1px solid $--card-item-border-color;
+  margin: 0;
+  clear: both;
+  box-shadow: inset 0 0 6px 1px $--card-item-shadow-border-color;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid $--card-item-acitve-border-color;
+    background-image: $--card-item-acitve-background-image; 
+    box-shadow: inset 0 0 6px 1px $--card-item-shadow-border-color-hover;
+    @include ee(title) {
+      color: $--card-item-title-color-selected;
+      background: $--card-item-title-select-background;  
+    }
+  }
+
+  @include m(selected) {
+    border: 1px solid $--card-item-acitve-border-color;
+    background-image: $--card-item-acitve-background-image; 
+    box-shadow: inset 0 0 6px 1px $--card-item-shadow-border-color-hover;
+  }
+
+  @include e(content) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include e(slot) {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+  }
+
+  @include e(title) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding-left: 4px;
+    text-align: center;
+    color: $--card-item-title-color;
+    height: 24px;
+    line-height: 24px;
+    background: $--card-item-title-background;
+
+    @include m(selected) {
+      color: $--card-item-title-color-selected;
+      background: $--card-item-title-select-background;  
+    }
+  }
+}
+

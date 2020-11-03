@@ -1,0 +1,73 @@
+.kview-fade-enter-active, .kview-fade-leave-active {
+  transition: opacity .5s;
+}
+.kview-fade-enter, .kview-fade-leave-to {
+  opacity: 0;
+}
+
+.kview-scale-in-full-enter-active, .kview-scale-in-full-leave-active {
+  transition: 0.5s;
+  transform: scale(1);
+  transform-origin: 50% 100% 0;
+  opacity: 1;
+}
+
+.kview-scale-in-full-enter, .kview-scale-in-full-leave-to {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.kview-width-fade-enter-active, .kview-width-fade-leave-active {
+  width: 100%;
+  transition: all .5s ease-in;
+}
+.kview-width-fade-enter, .kview-width-fade-leave-to {
+  width: 0;
+}
+
+
+.kview-width-fade-slow-enter-active, .kview-width-fade-slow-leave-active {
+  // transition: 0.5s ease-in;
+  // transform: scale(1);
+  // transform-origin: 0 0 0;
+  // opacity: 1;
+
+  width: 100%;
+  transition: all 1s ease-in;
+}
+.kview-width-fade-slow-enter, .kview-width-fade-slow-leave-to {
+  width: 0;
+
+  // opacity: 0;
+  // transform: scale(0);
+}
+
+.kview-msgbox-fade-enter-active {
+  animation: kview-msgbox-fade-in .3s;
+}
+
+.kview-msgbox-fade-leave-active {
+  animation: kview-msgbox-fade-out .3s;
+}
+
+@keyframes kview-msgbox-fade-in {
+  0% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes kview-msgbox-fade-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+}

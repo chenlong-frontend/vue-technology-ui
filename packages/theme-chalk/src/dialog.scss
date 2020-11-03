@@ -1,0 +1,235 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+
+/* dialog
+-------------------------- */
+@include b(dialog-container) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+  &::after {
+    content: "";
+      display: inline-block;
+      height: 100%;
+      width: 0;
+      vertical-align: middle;
+  }
+  @include m(center) {
+    text-align: center;
+  }
+}
+
+@include b(dialog) {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  position: relative;
+  pointer-events: auto;
+
+  @include m(center) {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  @include e(close) {
+    position: absolute;
+    right: -6px;
+    top: -8px;
+  }
+
+  @include e(icon) {
+    position: absolute;
+    left: 27px;
+    top: 11px;
+    font-size: 12px;
+    color: $--color-white;
+    z-index: 1;
+    transition: transform 0.75s;
+    cursor: pointer;
+    &:hover {
+      transform: rotate(-180deg);
+    }
+  }
+
+  @include e(title) {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: -4px;
+  }
+
+  @include e(leftimg) {
+    margin-left:-7px;
+  }
+
+  @include e(rightimg) {
+    margin-right:-5px;
+  }
+
+  @include e(txt) {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgba($color: $--color-white, $alpha: 0.9);
+    line-height: 46px;
+    background:url('./assets/dialog/verticalbk.png');
+  }
+
+  @include e(outer) {
+    width: 100%;
+    height: calc(100% - 36px);
+    border:2px solid $--dialog-outer-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;      
+    background: url('./assets/dialog/line.png') repeat-y;  
+    box-shadow: $--dialog-outer-box-shadow;
+  }
+
+  @include e(content) {
+    position: absolute;
+    top: 40px;
+    bottom: 47px;
+    right: 2px;
+    left: 2px;
+  }
+
+  @include e(footer) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  @include e(footer-btns) {
+    height: 29px;
+    text-align: center;
+    padding: 8px 0;
+    margin-top: -2px;
+  }
+
+  @include e(bottom) {
+    position: absolute;
+    right: 20px;
+    bottom: -11px;
+  }
+}
+
+/* dialog-move
+-------------------------- */
+@include b(dialog-move-container) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+@include b(dialog-move) {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  pointer-events: auto;
+
+  @include when(large) {
+    width: 576px;
+  }
+
+  @include when(middle) {
+    width: 395px;
+  }
+
+  @include when(small) {
+    width: 113px;
+  }
+
+  @include e(top) {
+    width: 100%;
+    height: 56px;
+
+    @include when(small) {
+      height: 26px;
+      background:url('./assets/dialog-move/top-small.png') no-repeat;
+    }
+    @include when(middle) {
+      background:url('./assets/dialog-move/top-middle.png') no-repeat;
+    }
+    @include when(large) {
+      height: 50px;
+      background:url('./assets/dialog-move/top-large.png') no-repeat;
+    }
+
+    @include when(plain) {
+      background:url('./assets/dialog-move/bottom-middle.png') no-repeat;
+      transform:scaleY(-1);
+    }
+  }
+
+  @include e(middle) {
+    width: 100%;
+    height: calc(100% - 112px);
+
+    @include when(small) {
+      height: calc(100% - 52px);
+      background:url('./assets/dialog-move/middle-small.png') repeat-y;
+    }
+    @include when(middle) {
+      background:url('./assets/dialog-move/middle-middle.png') repeat-y;
+    }
+    @include when(large) {
+      height: calc(100% - 100px);
+      background:url('./assets/dialog-move/middle-large.png') repeat-y;
+    }
+  }
+
+  @include e(bottom) {
+    width: 100%;
+    height: 56px;
+
+    @include when(small) {
+      height: 26px;
+      background:url('./assets/dialog-move/top-small.png') no-repeat;
+      transform:scaleY(-1);
+    }
+    @include when(middle) {
+      background:url('./assets/dialog-move/bottom-middle.png') no-repeat;
+    }
+    @include when(large) {
+      height: 50px;
+      background:url('./assets/dialog-move/bottom-large.png') no-repeat;
+    }
+  }
+
+  @include e(close) {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: $--color-white-text;
+    cursor: pointer;
+    background: url('./assets/dialog-move/close.svg') no-repeat;
+    z-index: 9;
+  }
+
+  @include e(content) {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;;
+    bottom: 0;
+  }
+}

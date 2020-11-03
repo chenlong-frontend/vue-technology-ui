@@ -1,0 +1,70 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+@import './mixins/utils.scss';
+
+/* pagination
+-------------------------- */
+@include b(paination) {
+  height: 24px;
+  white-space: nowrap;
+  @include util-clearfix;
+}
+
+@include e(button) {
+  width: 26px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  outline: none;
+  box-sizing: border-box;
+  color: $--pagination-button-color;
+  vertical-align: top;
+  background: $--pagination-button-background;
+  box-shadow: inset 0 0 9px 0 $--pagination-button-box-shadow-color;
+  border: 1px solid transparent;
+  border-image: $--pagination-button-border-image;
+  cursor: pointer;
+  img {
+    opacity: 0.8;
+  }
+  &:disabled {
+    background: $--pagination-button-disabled-background;
+    box-shadow: inset 0 0 9px 0 $--pagination-button-disabled-box-shadow-color;
+    cursor: not-allowed;
+    img {
+      opacity: 0.6;
+    }
+  }
+}
+
+@include e(list) {
+  margin: 0 14px;
+  padding: 0;
+  height: 24px;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+@include e(number) {
+  display: inline-block;
+  opacity: 0.4;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;  
+  vertical-align: top;
+  color: $--color-white;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover {
+    color: $--pagination-number-active-color;
+    opacity: 1;
+  }
+  &.active {
+    color: $--pagination-number-active-color;
+    opacity: 1;
+  }
+}
