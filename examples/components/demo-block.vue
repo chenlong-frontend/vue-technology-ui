@@ -26,18 +26,7 @@
       <transition name="text-slide">
         <span v-show="hovering">{{ controlText }}</span>
       </transition>
-      <el-tooltip effect="dark" :content="langConfig['tooltip-text']" placement="right">
-        <transition name="text-slide">
-          <el-button
-            v-show="hovering || isExpanded"
-            size="small"
-            type="text"
-            class="control-button"
-            @click.stop="goCodepen">
-            {{ langConfig['button-text'] }}
-          </el-button>
-        </transition>
-      </el-tooltip>
+      <span class="control-button" v-show="hovering" @click.stop="goCodepen">{{ langConfig['button-text'] }}</span>
     </div>
   </div>
 </template>
@@ -168,7 +157,7 @@
       }
       
       .control-button {
-        line-height: 26px;
+        line-height: 44px;
         position: absolute;
         top: 0;
         right: 0;
@@ -264,7 +253,7 @@
       },
 
       iconClass() {
-        return this.isExpanded ? 'el-icon-caret-top' : 'el-icon-caret-bottom';
+        return this.isExpanded ? 'kview-icon-caret-top' : 'kview-icon-caret-bottom';
       },
 
       controlText() {
@@ -294,7 +283,7 @@
           return;
         }
         setTimeout(() => {
-          this.scrollParent = document.querySelector('.page-component__scroll > .el-scrollbar__wrap');
+          this.scrollParent = document.querySelector('.page-component__scroll > .kview-scrollbar__wrap');
           this.scrollParent && this.scrollParent.addEventListener('scroll', this.scrollHandler);
           this.scrollHandler();
         }, 200);

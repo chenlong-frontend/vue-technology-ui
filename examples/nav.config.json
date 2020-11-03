@@ -12,6 +12,20 @@
           "name": "安装"
         }
       ]
+    },
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout 布局"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
