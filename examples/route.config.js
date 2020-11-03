@@ -76,23 +76,6 @@ const registerRoute = (navConfig) => {
 let route = registerRoute(navConfig);
 
 const generateMiscRoutes = function(lang) {
-  let guideRoute = {
-    path: `/${ lang }/guide`, // 指南
-    redirect: `/${ lang }/guide/design`,
-    component: load(lang, 'guide'),
-    children: [{
-      path: 'design', // 设计原则
-      name: 'guide-design' + lang,
-      meta: { lang },
-      component: load(lang, 'design')
-    }, {
-      path: 'nav', // 导航
-      name: 'guide-nav' + lang,
-      meta: { lang },
-      component: load(lang, 'nav')
-    }]
-  };
-
   let indexRoute = {
     path: `/${ lang }`, // 首页
     meta: { lang },
@@ -100,7 +83,7 @@ const generateMiscRoutes = function(lang) {
     component: load(lang, 'index')
   };
 
-  return [guideRoute, indexRoute];
+  return [indexRoute];
 };
 
 langs.forEach(lang => {

@@ -1,4 +1,4 @@
-<style scoped>
+<style scoped lang="scss">
   .banner {
     text-align: center;
   }
@@ -300,18 +300,6 @@
     </div>
     <div class="cards">
       <ul class="container">
-        <li>
-          <div class="card">
-            <img src="~examples/assets/images/guide.png" alt="">
-            <h3>指南</h3>
-            <p>了解设计指南，帮助产品设计人员搭建逻辑清晰、结构合理且高效易用的产品。</p>
-            <router-link
-              active-class="active"
-              to="/zh-CN/guide/design"
-              exact>查看详情
-            </router-link>
-          </div>
-        </li>
         <li>
           <div class="card">
             <img src="~examples/assets/images/component.png" alt="">
