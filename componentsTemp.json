@@ -1,0 +1,5 @@
+{
+  "scrollbar": "./packages/scrollbar/index.js",
+  "row": "./packages/row/index.ts",
+  "col": "./packages/col/index.ts"
+}

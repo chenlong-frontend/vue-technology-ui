@@ -24,7 +24,7 @@
       margin-top: 80px;
       transition: padding-top .3s;
 
-      > .el-scrollbar__wrap {
+      > .kview-scrollbar__wrap {
         height: 100%;
         overflow-x: auto;
       }
@@ -218,7 +218,7 @@
     },
     mounted() {
       this.componentScrollBar = this.$refs.componentScrollBar;
-      this.componentScrollBox = this.componentScrollBar.$el.querySelector('.el-scrollbar__wrap');
+      this.componentScrollBox = this.componentScrollBar.$el.querySelector('.kview-scrollbar__wrap');
       this.throttledScrollHandler = throttle(300, this.handleScroll);
       this.componentScrollBox.addEventListener('scroll', this.throttledScrollHandler);
       this.renderAnchorHref();

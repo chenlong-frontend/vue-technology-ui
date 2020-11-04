@@ -17,16 +17,16 @@
   cursor: pointer;
 
   @include m(default) {
-    background: url('./assets/button/button-sure.svg');
+    background: url('../assets/button/button-sure.svg');
     &:hover {
-      background: url('./assets/button/button-sure-hover.svg');
+      background: url('../assets/button/button-sure-hover.svg');
     }
   }
 
   @include m(warn) {
-    background: url('./assets/button/button-cancel.svg');
+    background: url('../assets/button/button-cancel.svg');
     &:hover {
-      background: url('./assets/button/button-cancel-hover.svg');
+      background: url('../assets/button/button-cancel-hover.svg');
     }
   }
 }
@@ -50,16 +50,16 @@
   cursor: pointer;
 
   @include m(default) {
-    background: url('./assets/button-icon/icon-edit.svg');
+    background: url('../assets/button-icon/icon-edit.svg');
     &:hover {
-      background: url('./assets/button-icon/icon-edit-hover.svg');
+      background: url('../assets/button-icon/icon-edit-hover.svg');
     }
   }
 
   @include m(warn) {
-    background: url('./assets/button-icon/icon-delete.svg');
+    background: url('../assets/button-icon/icon-delete.svg');
     &:hover {
-      background: url('./assets/button-icon/icon-delete-hover.svg');
+      background: url('../assets/button-icon/icon-delete-hover.svg');
     }
   }
 
@@ -71,7 +71,7 @@
 
 /* button-icon-middle
 -------------------------- */
-$--button-icon-middle-active: './assets/button-icon/middle-hover.svg';
+$--button-icon-middle-active: '../assets/button-icon/middle-hover.svg';
 @include b(button-icon-middle) {
   position: relative;
   display: inline-block;
@@ -89,7 +89,7 @@ $--button-icon-middle-active: './assets/button-icon/middle-hover.svg';
   cursor: pointer;
 
   @include m(default) {
-    background: url('./assets/button-icon/middle.svg');
+    background: url('../assets/button-icon/middle.svg');
     &:hover {
       background: url($--button-icon-middle-active);
     }

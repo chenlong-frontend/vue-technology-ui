@@ -24,7 +24,7 @@
       margin-top: 80px;
       transition: padding-top .3s;
 
-      > .el-scrollbar__wrap {
+      > .kview-scrollbar__wrap {
         height: 100%;
         overflow-x: auto;
       }

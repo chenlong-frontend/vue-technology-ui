@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const config = require('./config');
@@ -19,7 +20,7 @@ const webpackConfig = {
     docs: './examples/entry.js'
   } : (isPlay ? './examples/play.js' : './examples/entry.js'),
   output: {
-    path: path.resolve(process.cwd(), './examples/element-ui/'),
+    path: path.resolve(process.cwd(), './examples/kview/'),
     publicPath: process.env.CI_ENV || '',
     filename: '[name].[hash:7].js',
     chunkFilename: isProd ? '[name].[hash:7].js' : '[name].js'
@@ -47,7 +48,7 @@ const webpackConfig = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         options: {
-          appendTsSuffixTo: [/\.vue$/],
+          appendTsSuffixTo: [/\.vue$/]
         },
         exclude: /node_modules/
       },
@@ -131,6 +132,7 @@ const webpackConfig = {
     })
   ],
   optimization: {
+    minimize: true,
     minimizer: []
   },
   devtool: '#eval-source-map'
@@ -148,19 +150,25 @@ if (isProd) {
     })
   );
   webpackConfig.optimization.minimizer.push(
-    new UglifyJsPlugin({
-      cache: true,
-      parallel: true,
-      sourceMap: false
-    }),
-    new OptimizeCSSAssetsPlugin({})
+    // new UglifyJsPlugin({
+    //   cache: true,
+    //   parallel: true,
+    //   sourceMap: false
+    // }),
+    new OptimizeCSSAssetsPlugin({}),
+    new TerserPlugin({
+      terserOptions: {
+        keep_classnames: true,
+        keep_fnames: true
+      }
+    })
   );
   // https://webpack.js.org/configuration/optimization/#optimizationsplitchunks
   webpackConfig.optimization.splitChunks = {
     cacheGroups: {
       vendor: {
         test: /\/src\//,
-        name: 'element-ui',
+        name: 'kview',
         chunks: 'all'
       }
     }

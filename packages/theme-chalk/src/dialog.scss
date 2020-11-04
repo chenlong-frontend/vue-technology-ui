@@ -82,7 +82,7 @@
     overflow: hidden;
     color: rgba($color: $--color-white, $alpha: 0.9);
     line-height: 46px;
-    background:url('./assets/dialog/verticalbk.png');
+    background:url('../assets/dialog/verticalbk.png');
   }
 
   @include e(outer) {
@@ -91,7 +91,7 @@
     border:2px solid $--dialog-outer-border-color;
     box-sizing: border-box;
     border-radius: 5px;      
-    background: url('./assets/dialog/line.png') repeat-y;  
+    background: url('../assets/dialog/line.png') repeat-y;  
     box-shadow: $--dialog-outer-box-shadow;
   }
 
@@ -159,18 +159,18 @@
 
     @include when(small) {
       height: 26px;
-      background:url('./assets/dialog-move/top-small.png') no-repeat;
+      background:url('../assets/dialog-move/top-small.png') no-repeat;
     }
     @include when(middle) {
-      background:url('./assets/dialog-move/top-middle.png') no-repeat;
+      background:url('../assets/dialog-move/top-middle.png') no-repeat;
     }
     @include when(large) {
       height: 50px;
-      background:url('./assets/dialog-move/top-large.png') no-repeat;
+      background:url('../assets/dialog-move/top-large.png') no-repeat;
     }
 
     @include when(plain) {
-      background:url('./assets/dialog-move/bottom-middle.png') no-repeat;
+      background:url('../assets/dialog-move/bottom-middle.png') no-repeat;
       transform:scaleY(-1);
     }
   }
@@ -181,14 +181,14 @@
 
     @include when(small) {
       height: calc(100% - 52px);
-      background:url('./assets/dialog-move/middle-small.png') repeat-y;
+      background:url('../assets/dialog-move/middle-small.png') repeat-y;
     }
     @include when(middle) {
-      background:url('./assets/dialog-move/middle-middle.png') repeat-y;
+      background:url('../assets/dialog-move/middle-middle.png') repeat-y;
     }
     @include when(large) {
       height: calc(100% - 100px);
-      background:url('./assets/dialog-move/middle-large.png') repeat-y;
+      background:url('../assets/dialog-move/middle-large.png') repeat-y;
     }
   }
 
@@ -198,15 +198,15 @@
 
     @include when(small) {
       height: 26px;
-      background:url('./assets/dialog-move/top-small.png') no-repeat;
+      background:url('../assets/dialog-move/top-small.png') no-repeat;
       transform:scaleY(-1);
     }
     @include when(middle) {
-      background:url('./assets/dialog-move/bottom-middle.png') no-repeat;
+      background:url('../assets/dialog-move/bottom-middle.png') no-repeat;
     }
     @include when(large) {
       height: 50px;
-      background:url('./assets/dialog-move/bottom-large.png') no-repeat;
+      background:url('../assets/dialog-move/bottom-large.png') no-repeat;
     }
   }
 
@@ -221,7 +221,7 @@
     text-align: center;
     color: $--color-white-text;
     cursor: pointer;
-    background: url('./assets/dialog-move/close.svg') no-repeat;
+    background: url('../assets/dialog-move/close.svg') no-repeat;
     z-index: 9;
   }
 

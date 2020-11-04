@@ -1,0 +1,5 @@
+@import '../mixins/config.scss';
+
+[class^="#{$namespace}-"] {
+  box-sizing: content-box;
+}

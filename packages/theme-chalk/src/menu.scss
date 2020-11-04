@@ -16,10 +16,10 @@
   position: relative;
   width: 74px;
   height: 95px;
-  background: url('./assets/menu/menu.svg') no-repeat;
+  background: url('../assets/menu/menu.svg') no-repeat;
   z-index: 2;
   &:hover {
-    background: url('./assets/menu/menu-active.svg') no-repeat;
+    background: url('../assets/menu/menu-active.svg') no-repeat;
     @include ee(icon) {
       * {
         background: $--menu-item-icon-background-active;
@@ -32,7 +32,7 @@
     }
   }
   @include when(active) {
-    background: url('./assets/menu/menu-active.svg') no-repeat;
+    background: url('../assets/menu/menu-active.svg') no-repeat;
   }
 }
 
