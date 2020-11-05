@@ -71,7 +71,11 @@ module.exports = {
             preserveWhitespace: false
           }
         }
-      }
+      },
+      {
+				test: /\.(jpg|png|svg)$/,
+				loader: 'url-loader?limit=10000000000&name=./asset/img/[hash:8].[name].[ext]'
+			}
     ]
   },
   plugins: [

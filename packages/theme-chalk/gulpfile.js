@@ -22,4 +22,10 @@ function copyfont() {
     .pipe(dest('./lib/fonts'));
 }
 
-exports.build = series(compile, copyfont);
+function copyImg() {
+  return src('./src/assets/**')
+    .pipe(cssmin())
+    .pipe(dest('./lib/assets'));
+}
+
+exports.build = series(compile, copyfont, copyImg);
