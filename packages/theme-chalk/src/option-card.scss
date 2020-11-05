@@ -1,0 +1,71 @@
+@import './common/var.scss';
+@import './mixins/mixins.scss';
+
+/* option-card
+-------------------------- */
+@include b(option-card) {
+  position: relative;
+  background: $--option-card-background;
+  border: 1px solid $--option-card-border-color;
+  margin: 5px;
+  clear: both;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid transparent;
+    border-image: $--option-card-acitve-border-image;
+  }
+
+  @include m(selected) {
+    border: 1px solid transparent;
+    border-image: $--option-card-acitve-border-image;
+  }
+
+  @include e(content) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include e(slot) {
+    flex: 1;
+  }
+
+  @include e(title) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding-left: 4px;
+    text-align: center;
+    color: $--option-card-title-color;
+    height: 24px;
+    line-height: 24px;
+    background: $--option-card-title-background;
+
+    @include m(selected) {
+      background: $--option-card-title-select-background;  
+    }
+  }
+
+  @include e(corner) {
+    position: absolute;
+    top: 0;
+  }
+
+  @include e(triangle) {
+    border: 12px solid $--option-card-triangle-color;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+  }
+
+  @include e(icon) {
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    font-size: 20px;
+    color: $--option-card-icon-color;
+  }
+}
+

@@ -22,6 +22,107 @@
             {
               "path": "/layout",
               "title": "Layout 布局"
+            },
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            }
+          ]
+        },
+        {
+          "groupName": "Form",
+          "list": [
+            {
+              "path": "/form",
+              "title": "Form 表单"
+            },
+            {
+              "path": "/input",
+              "title": "Input 输入框"
+            },
+            {
+              "path": "/number-input",
+              "title": "NumberInput 数字输入框"
+            },
+            {
+              "path": "/select",
+              "title": "Select 选择框"
+            },
+            {
+              "path": "/search",
+              "title": "Search 搜索框"
+            }
+          ]
+        },
+        {
+          "groupName": "Data",
+          "list": [
+            {
+              "path": "/cell",
+              "title": "Cell 单元格"
+            },
+            {
+              "path": "/list",
+              "title": "List 列表"
+            },
+            {
+              "path": "/pagination",
+              "title": "Pagination 分页"
+            }
+          ]
+        },
+        {
+          "groupName": "Notice",
+          "list": [
+            {
+              "path": "/card",
+              "title": "Card 卡片"
+            },
+            {
+              "path": "/bubble",
+              "title": "Bubble 气泡框"
+            },
+            {
+              "path": "/empty",
+              "title": "Empty 空提示"
+            },
+            {
+              "path": "/message",
+              "title": "Message 消息提示"
+            },
+            {
+              "path": "/message-box",
+              "title": "MessageBox 弹窗"
+            }
+          ]
+        },
+        {
+          "groupName": "Navigation",
+          "list": [
+            {
+              "path": "/menu",
+              "title": "Menu 菜单"
+            }
+          ]
+        },
+        {
+          "groupName": "Others",
+          "list": [
+            {
+              "path": "/dialog",
+              "title": "Dialog 对话框"
+            },
+            {
+              "path": "/dialog-move",
+              "title": "DialogMove 可拖动对话框"
+            },
+            {
+              "path": "/divider",
+              "title": "Divider 分割线"
+            },
+            {
+              "path": "/collapse",
+              "title": "Collapse 折叠面板"
             }
           ]
         }

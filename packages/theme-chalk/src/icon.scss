@@ -1,0 +1,39 @@
+@import "common/var";
+
+@font-face {font-family: "iconfont";
+  src: url('#{$--font-path}/iconfont.woff') format('woff'),
+       url('#{$--font-path}/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+[class^="kview-icon-"], [class*=" kview-icon-"] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kview-icon-error:before {
+  content: "\e664";
+}
+
+.kview-icon-arrow_up:before {
+  content: "\e616";
+}
+
+.kview-icon-tick:before {
+  content: "\e6a9";
+}
+
+.kview-icon-baseline-close-px:before {
+  content: "\e615";
+}
+
+.kview-icon-warn:before {
+  content: "\e61c";
+}
+
+.kview-icon-arrow_down:before {
+  content: "\e604";
+}
+

@@ -1,0 +1,33 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+
+/* button-icon-middle
+-------------------------- */
+$--button-icon-middle-active: './assets/button-icon/middle-hover.svg';
+@include b(button-icon-middle) {
+  position: relative;
+  display: inline-block;
+  border-radius: 1px;
+  width: 44px;
+  height: 34px;
+  font-size: 12px;
+  line-height: 34px;
+  box-sizing: border-box;
+  color: $--color-white-text;
+  text-align: center;
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  @include m(default) {
+    background: url('./assets/button-icon/middle.svg');
+    &:hover {
+      background: url($--button-icon-middle-active);
+    }
+  }
+
+  @include m(active) {
+    background: url($--button-icon-middle-active);
+  }
+}

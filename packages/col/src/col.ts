@@ -1,7 +1,6 @@
 import { Component, Prop, Vue} from 'vue-property-decorator'
 @Component
 export default class KCol extends Vue {
-  static install: (Vue: any) => void
   name = 'KCol'
   @Prop({default: 24}) span
   @Prop({default: 'div'}) tag

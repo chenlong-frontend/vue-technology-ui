@@ -8,7 +8,6 @@ export default class KRow extends Vue {
   @Prop() type: string
   @Prop({default: 'start'}) justify:string
   @Prop({default: 'top'}) align:string
-  static install: (Vue: any) => void
 
   get style() {
     const ret = {marginLeft: null, marginRight: null};

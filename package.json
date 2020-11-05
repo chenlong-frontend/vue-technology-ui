@@ -36,6 +36,7 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@types/node": "^14.14.6",
     "@vue/component-compiler-utils": "^2.6.0",
     "algoliasearch": "^3.24.5",
     "babel-cli": "^6.26.0",

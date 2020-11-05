@@ -1,0 +1,38 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+
+/* button-mini
+-------------------------- */
+@include b(button-mini) {
+  position: relative;
+  display: inline-block;
+  border-radius: 1px;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  color: $--color-white-text;
+  outline: none;
+  cursor: pointer;
+
+  @include m(default) {
+    border: 1px solid $--button-mini-border-color;
+    background:$--button-mini-background-color;
+    &:hover {
+      border: 1px solid $--button-mini-border-hover-color;
+      background: $--button-mini-background-hover-color;
+    }
+  }
+
+  @include m(warn) {
+    border: 1px solid $--button-mini-warn-border-color;
+    background:$--button-mini-warn-background-color;
+    &:hover {
+      border: 1px solid $--button-mini-warn-border-hover-color;
+      background: $--button-mini-warn-background-hover-color;
+    }
+  }
+}

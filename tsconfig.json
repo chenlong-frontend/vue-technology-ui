@@ -8,6 +8,7 @@
       "./node_modules/vue/types",
       "./types/"
     ],
+    "types": ["node"],
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "es5",

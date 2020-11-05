@@ -1,0 +1,13 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+
+/* card-shadow
+-------------------------- */
+@include b(card-shadow) {
+  width: 240px;
+  height: 200px;
+  border: 1px solid $--card-shadow-border-color;
+  background-image: $--card-shadow-background-image;
+  box-shadow: 0 0 55px 1px $--card-shadow-border-color;
+  border-radius: 4px;
+}
