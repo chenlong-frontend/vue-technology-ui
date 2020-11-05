@@ -74,7 +74,7 @@ kview 为 Vue.prototype 添加了全局方法 $message。因此在 vue instance 
 单独引入 `Message`：
 
 ```javascript
-import { Message } from 'kview-t-ui';
+import { Message } from 'kview-c-ui';
 ```
 
 此时调用方法为 `Message(options)`。我们也为每个 type 定义了各自的方法，如 `Message.success(options)`。并且可以调用 `Message.closeAll()` 手动关闭所有实例。

@@ -1,4 +1,4 @@
-import { on, off } from 'kview-t-ui/src/utils/dom';
+import { on, off } from 'kview-c-ui/src/utils/dom';
 import { renderThumbStyle, BAR_MAP } from './util';
 
 /* istanbul ignore next */

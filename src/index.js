@@ -85,7 +85,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '1.0.6',
+  version: '0.0.1',
   install,
   Scrollbar,
   Row,

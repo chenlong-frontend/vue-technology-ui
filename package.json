@@ -1,6 +1,6 @@
 {
-  "name": "kview-t-ui",
-  "version": "1.0.7",
+  "name": "kview-c-ui",
+  "version": "0.0.1",
   "description": "A Component Library for ksign",
   "main": "lib/kview.common.js",
   "files": [

@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch, Inject } from 'vue-property-decorator'
-import Emitter from 'kview-t-ui/src/utils/emitter';
+import Emitter from 'kview-c-ui/src/utils/emitter';
 
 @Component
 export default class KCollapseItem extends Emitter {

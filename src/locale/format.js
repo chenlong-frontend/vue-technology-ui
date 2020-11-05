@@ -1,4 +1,4 @@
-import { hasOwn } from 'kview-t-ui/src/utils/util';
+import { hasOwn } from 'kview-c-ui/src/utils/util';
 
 const RE_NARGS = /(%|)\{([0-9a-zA-Z_]+)\}/g;
 /**

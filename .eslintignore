@@ -1,5 +1,4 @@
-src/utils/popper.js
-src/utils/date.js
+src/utils/
 packages/*
 examples/play
 *.sh

@@ -29,9 +29,9 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["kview-t-ui"],
+          "root": ["kview-c-ui"],
           "alias": {
-            "kview-t-ui/src": "kview-t-ui/lib"
+            "kview-c-ui/src": "kview-c-ui/lib"
           },
           "extensions": [".ts"]
         }]

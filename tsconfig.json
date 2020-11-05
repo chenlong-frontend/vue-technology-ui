@@ -10,7 +10,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "kview-t-ui/*": ["./*"]
+      "kview-c-ui/*": ["./*"]
     },
     "types": ["node"],
     "experimentalDecorators": true,

@@ -45,7 +45,7 @@
 如果单独引入 `MessageBox`：
 
 ```javascript
-import { MessageBox } from 'kview-t-ui';
+import { MessageBox } from 'kview-c-ui';
 ```
 
 MessageBox.confirm，调用参数与全局方法相同。

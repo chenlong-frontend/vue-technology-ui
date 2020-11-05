@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import MessageBoxConstructor from './src/messagebox.vue';
-import { isVNode } from 'kview-t-ui/src/utils/vdom';
-import merge from 'kview-t-ui/src/utils/merge';
+import { isVNode } from 'kview-c-ui/src/utils/vdom';
+import merge from 'kview-c-ui/src/utils/merge';
 
 let currentMsg, instance;
 let msgQueue = []

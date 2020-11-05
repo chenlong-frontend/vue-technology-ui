@@ -19,8 +19,8 @@
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch, Inject, Provide } from 'vue-property-decorator'
 import AsyncValidator from 'async-validator';
-import {getPropByPath} from 'kview-t-ui/src/utils/util'
-import Emitter from 'kview-t-ui/src/utils/emitter'
+import {getPropByPath} from 'kview-c-ui/src/utils/util'
+import Emitter from 'kview-c-ui/src/utils/emitter'
 @Component
 export default class KFormItem extends Emitter {
   name = 'KFormItem'
