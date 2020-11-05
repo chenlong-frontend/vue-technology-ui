@@ -23,10 +23,10 @@
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch, Provide } from 'vue-property-decorator';
 import Dropdown from './selectDropdown.vue';
-import Emitter from 'kview-ui/src/utils/emitter';
-import {valueEquals} from 'kview-ui/src/utils/util'
-import { addResizeListener, removeResizeListener } from 'kview-ui/src/utils/resize-event';
-import Clickoutside from 'kview-ui/src/utils/clickoutside';
+import Emitter from 'kview-t-ui/src/utils/emitter';
+import {valueEquals} from 'kview-t-ui/src/utils/util'
+import { addResizeListener, removeResizeListener } from 'kview-t-ui/src/utils/resize-event';
+import Clickoutside from 'kview-t-ui/src/utils/clickoutside';
 
 @Component({
   components: {Dropdown},

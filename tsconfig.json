@@ -8,6 +8,10 @@
       "./node_modules/vue/types",
       "./types/"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "kview-t-ui/*": ["./*"]
+    },
     "types": ["node"],
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,

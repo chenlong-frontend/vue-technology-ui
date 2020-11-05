@@ -1,6 +1,6 @@
 import MessageConstructor from './src/message.vue';
-import { PopupManager } from 'kview-ui/src/utils/popup';
-import { isVNode } from 'kview-ui/src/utils/vdom';
+import { PopupManager } from 'kview-t-ui/src/utils/popup';
+import { isVNode } from 'kview-t-ui/src/utils/vdom';
 
 let instance;
 let instances = [];

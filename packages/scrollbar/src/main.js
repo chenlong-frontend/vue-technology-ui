@@ -1,8 +1,8 @@
 // reference https://github.com/noeldelgado/gemini-scrollbar/blob/master/index.js
 
-import { addResizeListener, removeResizeListener } from 'kview-ui/src/utils/resize-event';
-import scrollbarWidth from 'kview-ui/src/utils/scrollbar-width';
-import { toObject } from 'kview-ui/src/utils/util';
+import { addResizeListener, removeResizeListener } from 'kview-t-ui/src/utils/resize-event';
+import scrollbarWidth from 'kview-t-ui/src/utils/scrollbar-width';
+import { toObject } from 'kview-t-ui/src/utils/util';
 import Bar from './bar';
 
 /* istanbul ignore next */

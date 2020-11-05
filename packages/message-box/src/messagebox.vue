@@ -23,8 +23,8 @@
 
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
-import Popup from 'kview-ui/src/utils/popup'
-import Dialog from 'kview-ui/src/utils/aria-dialog'
+import Popup from 'kview-t-ui/src/utils/popup'
+import Dialog from 'kview-t-ui/src/utils/aria-dialog'
 
 let messageBox;
 @Component

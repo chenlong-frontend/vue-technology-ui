@@ -35,7 +35,7 @@
 
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
-import Popup from 'kview-ui/src/utils/popup/index'
+import Popup from 'kview-t-ui/src/utils/popup/index'
 
 const closeImg = require('./assets/close.png')
 const dialogBottomImg = require('./assets/dialog-bottom.png')

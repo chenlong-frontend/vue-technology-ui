@@ -29,10 +29,11 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["kview-ui"],
+          "root": ["kview-t-ui"],
           "alias": {
-            "kview-ui/src": "kview-ui/lib"
-          }
+            "kview-t-ui/src": "kview-t-ui/lib"
+          },
+          "extensions": [".ts"]
         }]
       ]
     },

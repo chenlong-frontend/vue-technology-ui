@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator';
-import Popper from 'kview-ui/src/utils/vue-popper'
+import Popper from 'kview-t-ui/src/utils/vue-popper'
 
 @Component
 export default class KSelectDropdown extends Popper {
