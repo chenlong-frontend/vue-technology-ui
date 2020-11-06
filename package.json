@@ -1,7 +1,7 @@
 {
   "name": "kview-c-ui",
-  "version": "0.0.4",
-  "description": "A Component Library for ksign",
+  "version": "0.0.5",
+  "description": "A Component Library",
   "main": "lib/kview.common.js",
   "files": [
     "lib",
@@ -15,11 +15,10 @@
     "url": "git@github.com:chenlong-frontend/vue-technology-ui"
   },
   "scripts": {
-    "tsc:utils": "tsc --build tsconfig.util.json",
     "bootstrap": "yarn || npm i",
     "clean": "rimraf lib && rimraf packages/*/lib",
     "deploy:build": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js",
-    "build:utils": "npm run tsc:utils && cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
+    "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "build:umd": "node build/bin/build-locale.js",
     "build:file": "node build/bin/build-entry.js & node build/bin/version.js",
     "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
