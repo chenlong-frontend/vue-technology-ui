@@ -68,6 +68,37 @@
 ```
 :::
 
+### 警告样式
+
+:::demo
+```html
+<k-button-larger @click="dialogVisible = true">点击打开 dialog</k-button-larger>
+
+<k-dialog title="提示" 
+  :appendToDom="appendToDom" :visible="dialogVisible" type="warn" :animation="true" wdith="740px" height="160px"
+  @confirm="handleClose" @cancel="handleClose" @close="handleClose"
+>
+  <span>这是一段信息</span>
+</k-dialog>
+
+<script>
+  export default {
+    data() {
+      return {
+        dialogVisible: false,
+        appendToDom: document.body
+      };
+    },
+    methods: {
+      handleClose() {
+        this.dialogVisible = false
+      }
+    }
+  };
+</script>
+```
+:::
+
 ### dialog Attributes
 | 参数      | 说明          | 类型      | 可选值                           | 默认值  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
@@ -75,6 +106,7 @@
 | destroyOnClose | 关闭时销毁 | boolean | — | false |
 | appendToDom | 插入容器 | HTMLElement | — | — |
 | title | 标题 | string | — | — |
+| type | 是否启用警告 | string | warn/default | — |
 | center | 是否居中 | boolean | — | true |
 | width | 宽度 | string | — | 50% |
 | height | 高度 | string | — | auto |

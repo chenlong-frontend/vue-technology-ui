@@ -1,32 +1,34 @@
 <template>
-   <div v-show="visible" class="kview-dialog-container" :class="{'kview-dialog-container--center': center}">
-      <div class="kview-dialog" :style="styles" :class="{'kview-dialog--center': center}">
+   <div v-show="visible" class="kview-dialog-container" :class="[center ? 'kview-dialog-container--center': '']">
+      <div class="kview-dialog" :style="styles" :class="[center ? 'kview-dialog--center': '', typeClass]">
         <transition :name="animationClass">
           <div v-show="contentAnimation || !animation" :style="{width: '100%', height}" >
             <div class="kview-dialog__close" v-if="closeBtn">
-              <img :src="closeImg" />
+              <div class="kview-dialog__closeimg"></div>
               <span @click="handleClose" class="kview-dialog__icon iconfont kview-icon-baseline-close-px"></span>
             </div>
             <div class="kview-dialog__title">
-              <img :src="leftImg" class="kview-dialog__leftimg"/>
+              <div class="kview-dialog__leftimg"></div>
               <div  class="kview-dialog__txt">
                 <span>{{title}}</span>
               </div>
-              <img :src="rightImg" class="kview-dialog__rightimg"/>
+              <div class="kview-dialog__rightimg"></div>
             </div>
             <div class="kview-dialog__outer">
-              <div class="kview-dialog__content" :style="{bottom: footer?'47px': '0'}">
-                <slot></slot>
-              </div>
-              <div v-if="footer" class="kview-dialog__footer">
-                <k-divider></k-divider>
-                <div class="kview-dialog__footer-btns">
-                  <k-button v-if="cancel" type="warn" :styles="{marginRight: '18px'}" @click="onCancel">取消</k-button>
-                  <k-button v-if="confirm" @click="onConfirm">确认</k-button>
+              <div class="kview-dialog__outerwarn" :style="outerStyle">
+                <div class="kview-dialog__content" :style="{bottom: footer?'47px': '0'}">
+                  <slot></slot>
+                </div>
+                <div v-if="footer" class="kview-dialog__footer">
+                  <k-divider></k-divider>
+                  <div class="kview-dialog__footer-btns">
+                    <k-button v-if="cancel" type="warn" :styles="{marginRight: '18px'}" @click="onCancel">取消</k-button>
+                    <k-button v-if="confirm" @click="onConfirm">确认</k-button>
+                  </div>
                 </div>
               </div>
             </div>
-            <img class="kview-dialog__bottom" :src="dialogBottomImg" />
+            <div class="kview-dialog__bottom"></div>
           </div>
         </transition>
       </div>
@@ -36,11 +38,15 @@
 <script lang="ts">
 import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
 import Popup from 'kview-c-ui/src/utils/popup/index'
+import repeatImg from 'kview-c-ui/src/utils/repeatImg'
+import { triggerAsyncId } from 'async_hooks'
 
-const closeImg = require('./assets/close.png')
-const dialogBottomImg = require('./assets/dialog-bottom.png')
-const leftImg = require('./assets/left.png')
-const rightImg = require('./assets/right.png')
+const gridWarnImg = require('./assets/grid-warn.png')
+
+enum Type {
+  DEFAULT = 'default',
+  WARN = 'warn'
+}
 
 @Component
 export default class KDialog extends Popup {
@@ -57,6 +63,7 @@ export default class KDialog extends Popup {
   @Prop({default: true}) confirm: boolean
   @Prop({default: true}) footer: boolean
   @Prop({default: false}) animation: boolean
+  @Prop({default: 'default'}) type: Type
   @Prop() left: string
   @Prop() top: string
   contentAnimation = false
@@ -89,16 +96,15 @@ export default class KDialog extends Popup {
     }
   }
 
-  closeImg = closeImg
-  dialogBottomImg = dialogBottomImg
-  leftImg = leftImg
-  rightImg = rightImg
-
   closed = false
   key = 0
+  gridImag = null
 
 
   mounted() {
+    repeatImg(gridWarnImg, 1920, 52, 30, -2).then(data => {
+      this.gridImag = data
+    })
     if (this.visible) {
       this.rendered = true;
       this.open();
@@ -108,23 +114,29 @@ export default class KDialog extends Popup {
     }
   }
 
+  get typeClass () {
+    if (this.type === Type.WARN) return 'kview-dialog--warn'
+    return ''
+  }
+
   get animationClass () {
     return this.animation ? 'kview-scale-in-full' : ''
   }
 
-  get classes () {
-    if (this.center) return 'kview-dialog--center'
-    return ''
-  }
-
   get styles () {
-
     return {
       left: this.left,
       top: this.top,
       width: this.width,
       height: this.height
     }
+  }
+
+  get outerStyle () {
+    if (this.gridImag && this.type === Type.WARN) {
+      return {background: 'url(' + this.gridImag + ') bottom no-repeat'}
+    }
+    return {}
   }
 
   onCancel () {

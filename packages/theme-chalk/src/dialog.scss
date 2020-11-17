@@ -66,11 +66,23 @@
   }
 
   @include e(leftimg) {
+    width: 94px;
+    height: 40px;
     margin-left:-7px;
+    background:url('./assets/dialog/left.png') no-repeat;
   }
 
   @include e(rightimg) {
     margin-right:-5px;
+    width: 75px;
+    height: 40px;
+    background:url('./assets/dialog/right.png') no-repeat;
+  }
+
+  @include e(closeimg) {
+    width: 67px;
+    height: 36px;
+    background:url('./assets/dialog/close.png') no-repeat;
   }
 
   @include e(txt) {
@@ -82,7 +94,7 @@
     overflow: hidden;
     color: rgba($color: $--color-white, $alpha: 0.9);
     line-height: 46px;
-    background:url('./assets/dialog/verticalbk.png');
+    background:url('./assets/dialog/verticalbk.png') repeat-x;
   }
 
   @include e(outer) {
@@ -93,6 +105,12 @@
     border-radius: 5px;      
     background: url('./assets/dialog/line.png') repeat-y;  
     box-shadow: $--dialog-outer-box-shadow;
+    z-index: 9;
+  }
+
+  @include e(outerwarn) {
+    width: 100%;
+    height: 100%;
   }
 
   @include e(content) {
@@ -118,7 +136,45 @@
 
   @include e(bottom) {
     position: absolute;
+    width: 82px;
+    height: 16px;
     right: 20px;
-    bottom: -11px;
+    bottom: -10px;
+    background:url('./assets/dialog/bottom.png') no-repeat;
+  }
+
+  @include e(grid) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 0;
+  }
+
+  @include m(warn) {
+    @include ee(leftimg) {
+      margin-top: 1px;
+      background:url('./assets/dialog/left-warn.png') no-repeat;
+    }
+    @include ee(rightimg) {
+      margin-right:-8px;
+      background:url('./assets/dialog/right-warn.png') no-repeat;
+    }
+    @include ee(closeimg) {
+      background:url('./assets/dialog/close-warn.png') no-repeat;
+    }
+    @include ee(txt) {
+      background:url('./assets/dialog/verticalbk-warn.png') repeat-x;
+    }
+    @include ee(outer) {
+      background:url('./assets/dialog/line-warn.png');
+    }
+    @include ee(bottom) {
+      background:url('./assets/dialog/bottom-warn.png');
+    }
+    @include ee(outer) {
+      border-color: $--dialog-outer-border-warn-color;
+      box-shadow: $--dialog-outer-warn-box-shadow;
+    }
   }
 }

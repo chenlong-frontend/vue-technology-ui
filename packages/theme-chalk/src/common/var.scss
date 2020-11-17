@@ -66,8 +66,10 @@ $--divider-text-color-light: #1F3F81 !default;
 
 /* dialog
 -------------------------- */
-$--dialog-outer-border-color: #B2CEFF;
+$--dialog-outer-border-color: #B2CEFF !default;
+$--dialog-outer-border-warn-color: #7E0909 !default;
 $--dialog-outer-box-shadow: 0 0 15px 5px #4B71AE, rgba($color: #005DCB, $alpha: 0.5) 0px 0px 30px inset !default;
+$--dialog-outer-warn-box-shadow: 0 0 6px 2px #5D2326, rgba($color: #962B31, $alpha: 0.5) 0px 0px 30px inset !default;
 
 /* input
 -------------------------- */
