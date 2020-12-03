@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.kview-icon-search:before {
+  content: "\e63e";
+}
+
 .kview-icon-error:before {
   content: "\e664";
 }
@@ -36,4 +40,3 @@
 .kview-icon-arrow_down:before {
   content: "\e604";
 }
-

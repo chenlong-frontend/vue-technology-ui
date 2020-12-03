@@ -38,6 +38,8 @@ $--xl: 1920px !default;
 -------------------------- */
 $--card-shadow-border-color:  rgb(75,113,174) !default;
 $--card-shadow-background-image: radial-gradient(50% 91%, #0C2138 47%, #030E27 91%) !default;
+$--card-shadow-warn-border-color:  #650000 !default;
+$--card-shadow-warn-background-image: radial-gradient(50% 91%, #0C2138 47%, #030E27 91%) !default;
 $--card-image-corner-border-color: #2D4369 !default;
 $--card-image-background-image: linear-gradient(90deg, #0D3869 0%, rgba(0,39,83,0.78) 49%, rgba(12,28,60,0.00) 100%) !default;
 /* card-item

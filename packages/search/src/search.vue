@@ -1,9 +1,9 @@
 <template>
   <div class="kview-search">
-    <span class="kview-search__icon font_family icon-icon_search02"></span>
+    <span class="kview-search__icon font_family kview-icon-search"></span>
     <div class="kview-search__flex">
       <div class="kview-search__input">
-        <span v-if="isClearable" class="kview-search__clear font_family icon-icon_error01" @click="onClear"></span>
+        <span v-if="isClearable" class="kview-search__clear font_family kview-icon-baseline-close-px" @click="onClear"></span>
         <k-input :styles="inputStyle" @enter="onSearch" :placeholder="placeholder" :value="value" @input="onInput"></k-input>
       </div>
       <div v-if="right" class="kview-search__text" @click="onSearch">
