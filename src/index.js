@@ -23,6 +23,7 @@ import Empty from '../packages/empty/index.ts';
 import Input from '../packages/input/index.ts';
 import NumberInput from '../packages/number-input/index.ts';
 import List from '../packages/list/index.ts';
+import Loading from '../packages/loading/index.ts';
 import MenuItem from '../packages/menu-item/index.ts';
 import Message from '../packages/message/index.ts';
 import MessageBox from '../packages/message-box/index.ts';
@@ -75,6 +76,8 @@ const install = function(Vue, opts = {}) {
     Vue.component(component.name, component);
   });
 
+  Vue.use(Loading.directive);
+
   Vue.prototype.$message = Message;
   Vue.prototype.$confirm = MessageBox.confirm;
 };
@@ -110,6 +113,7 @@ export default {
   Input,
   NumberInput,
   List,
+  Loading,
   MenuItem,
   Message,
   MessageBox,

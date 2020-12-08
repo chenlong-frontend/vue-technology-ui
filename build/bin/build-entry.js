@@ -21,6 +21,8 @@ const install = function(Vue, opts = {}) {
     Vue.component(component.name, component);
   });
 
+  Vue.use(Loading.directive);
+
   Vue.prototype.$message = Message;
   Vue.prototype.$confirm = MessageBox.confirm;
 };
@@ -52,7 +54,7 @@ ComponentNames.forEach(name => {
     package: name
   }));
 
-  if (['MessageBox', 'Message'].indexOf(componentName) === -1) {
+  if (['Loading','MessageBox', 'Message'].indexOf(componentName) === -1) {
     installTemplate.push(render(INSTALL_COMPONENT_TEMPLATE, {
       name: componentName,
       component: name

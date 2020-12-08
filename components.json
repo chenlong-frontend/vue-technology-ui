@@ -22,6 +22,7 @@
   "input": "./packages/input/index.ts",
   "number-input": "./packages/number-input/index.ts",
   "list": "./packages/list/index.ts",
+  "loading": "./packages/loading/index.ts",
   "menu-item": "./packages/menu-item/index.ts",
   "message": "./packages/message/index.ts",
   "message-box": "./packages/message-box/index.ts",

@@ -84,6 +84,12 @@ $--input-focus-border-color: #315BA3 !default;
 $--list-item-background: linear-gradient(90deg, rgba($color: #003C80, $alpha: 0.5)  0%, rgba(12,28,60,0.00) 100%) !default;
 $--list-item-text-shadow: #2BAAB6 !default;
 
+/* loading
+-------------------------- */
+$--loading-fullscreen-spinner-size: 44px;
+$--loading-spinner-size: 44px;
+$--loading-color-primary: #409eff;
+
 /* message
 -------------------------- */
 $--message-success-color: #0CF1FF !default;
