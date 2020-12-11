@@ -95,7 +95,6 @@ loadingDirective.install = Vue => {
       const backgroundExr = el.getAttribute('kview-loading-background');
       const customClassExr = el.getAttribute('kview-loading-custom-class');
       const vm = vnode.context;
-      console.log(binding.modifiers)
       const mask = new Mask({
         el: document.createElement('div'),
         data: {

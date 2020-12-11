@@ -7,8 +7,8 @@
 @include b(select) {
   position: relative;
   width: 100%;
-  height: 30px;
-  line-height: 28px;
+  height: 28px;
+  line-height: 26px;
   background: $--select-background;
   box-sizing: border-box;
   @include e(content) {
