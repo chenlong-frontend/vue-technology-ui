@@ -19,6 +19,7 @@ import Dialog from '../packages/dialog/index.ts';
 import DialogMove from '../packages/dialog-move/index.ts';
 import Divider from '../packages/divider/index.ts';
 import DividerText from '../packages/divider-text/index.ts';
+import DropDown from '../packages/drop-down/index.ts';
 import Empty from '../packages/empty/index.ts';
 import Input from '../packages/input/index.ts';
 import NumberInput from '../packages/number-input/index.ts';
@@ -56,6 +57,7 @@ const components = [
   DialogMove,
   Divider,
   DividerText,
+  DropDown,
   Empty,
   Input,
   NumberInput,
@@ -109,6 +111,7 @@ export default {
   DialogMove,
   Divider,
   DividerText,
+  DropDown,
   Empty,
   Input,
   NumberInput,

@@ -1,26 +1,28 @@
 <template>
-  <div  style="margin: 20px;">
-    <div
-    style="width: 400px;height: 200px"
-     v-loading="loading"
-     kview-loading-text="数据加载中"
-     kview-loading-spinner="kview-icon-loading"
-    ></div>
-  </div>
+  <k-drop-down>
+    <div style="width: 168px;height:28px;">
+      <k-cell-hexagon :svgHeight="28" sideWidth="35px">
+        <span>请选择</span>
+      </k-cell-hexagon>
+    </div>
+
+    <div slot="content" style="width: 168px;height:148px;">
+      <k-cell-hexagon :svgWidth="168" :svgHeight="148" :hoverActive="false">
+        
+      </k-cell-hexagon>
+    </div>
+  </k-drop-down>
 </template>
 
 <script>
   export default {
     data() {
    return {
-        value: '',
-        loading:true
+
       }
     },
     mounted() {
-      // setTimeout(() => {
-      //   this.loading = false
-      // }, 2000)
+
     },
     methods: {
 

@@ -18,6 +18,7 @@
   "dialog-move": "./packages/dialog-move/index.ts",
   "divider": "./packages/divider/index.ts",
   "divider-text": "./packages/divider-text/index.ts",
+  "drop-down": "./packages/drop-down/index.ts",
   "empty": "./packages/empty/index.ts",
   "input": "./packages/input/index.ts",
   "number-input": "./packages/number-input/index.ts",
