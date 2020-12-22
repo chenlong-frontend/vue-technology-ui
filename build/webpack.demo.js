@@ -26,7 +26,7 @@ const webpackConfig = {
     chunkFilename: isProd ? '[name].[hash:7].js' : '[name].js'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json', '.ts'],
+    extensions: ['.js', '.vue', '.json', '.ts', 'tsx'],
     alias: config.alias,
     modules: ['node_modules']
   },
@@ -46,10 +46,13 @@ const webpackConfig = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
-        options: {
-          appendTsSuffixTo: [/\.vue$/]
-        },
+        use: [
+          'babel-loader',
+          {
+            loader: 'ts-loader',
+            options: { appendTsxSuffixTo: [/\.vue$/] }
+          }
+        ],
         exclude: /node_modules/
       },
       {

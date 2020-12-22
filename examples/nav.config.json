@@ -121,6 +121,14 @@
               "title": "Dialog 对话框"
             },
             {
+              "path": "/tooltip",
+              "title": "Tooltip 文字提示"
+            },
+            {
+              "path": "/drop-down",
+              "title": "DropDown 下拉控件"
+            },
+            {
               "path": "/dialog-move",
               "title": "DialogMove 可拖动对话框"
             },

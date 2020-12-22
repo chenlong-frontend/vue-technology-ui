@@ -33,7 +33,7 @@
           "alias": {
             "kview-c-ui/src": "kview-c-ui/lib"
           },
-          "extensions": [".ts"]
+          "extensions": [".ts",".tsx"]
         }]
       ]
     },

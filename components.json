@@ -31,6 +31,7 @@
   "ripple": "./packages/ripple/index.ts",
   "search": "./packages/search/index.ts",
   "select": "./packages/select/index.ts",
+  "tooltip": "./packages/tooltip/index.ts",
   "option": "./packages/option/index.ts",
   "option-card": "./packages/option-card/index.ts",
   "form": "./packages/form/index.ts",

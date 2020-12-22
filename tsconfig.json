@@ -13,6 +13,8 @@
       "kview-c-ui/*": ["./*"]
     },
     "types": ["node"],
+    "jsx": "preserve",
+    "jsxFactory": "h",
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "es5",

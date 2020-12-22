@@ -32,6 +32,7 @@ import Pagination from '../packages/pagination/index.ts';
 import Ripple from '../packages/ripple/index.ts';
 import Search from '../packages/search/index.ts';
 import Select from '../packages/select/index.ts';
+import Tooltip from '../packages/tooltip/index.ts';
 import Option from '../packages/option/index.ts';
 import OptionCard from '../packages/option-card/index.ts';
 import Form from '../packages/form/index.ts';
@@ -67,6 +68,7 @@ const components = [
   Ripple,
   Search,
   Select,
+  Tooltip,
   Option,
   OptionCard,
   Form,
@@ -124,6 +126,7 @@ export default {
   Ripple,
   Search,
   Select,
+  Tooltip,
   Option,
   OptionCard,
   Form,

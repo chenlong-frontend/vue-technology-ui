@@ -2,6 +2,10 @@
 -------------------------- */
 $--font-path: 'fonts' !default;
 
+/* Transition
+-------------------------- */
+$--fade-linear-transition: opacity 200ms linear !default;
+
 /* Colors
 -------------------------- */
 $--color-white: #ffffff !default;
@@ -150,6 +154,22 @@ $--search-background-image-hover: linear-gradient(0deg, #05389C 9%, #0758B5 90%)
 $--scrollbar-thumb-background: #2C3649 !default;
 $--scrollbar-track-background: transparent !default;
 
+/* tooltip
+-------------------------- */
+/// color|1|Color|0
+$--tooltip-fill: #303133 !default;
+/// color|1|Color|0
+$--tooltip-color: #FFFFFF !default;
+/// fontSize||Font|1
+$--tooltip-font-size: 12px !default;
+/// color||Color|0
+$--tooltip-border-color: #303133 !default;
+$--tooltip-arrow-size: 6px !default;
+/// padding||Spacing|3
+$--tooltip-padding: 10px !default;
+
+$--index-popper: 2000 !default;
+
 $--breakpoints: (
   'xs' : (max-width: $--sm),
   'sm' : (min-width: $--sm),
@@ -157,3 +177,4 @@ $--breakpoints: (
   'lg' : (min-width: $--lg),
   'xl' : (min-width: $--xl)
 );
+

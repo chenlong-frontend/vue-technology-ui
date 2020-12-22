@@ -40,7 +40,7 @@ export default class KMessage extends Vue {
 
   handleAfterLeave() {
     this.$destroy();
-    this.$el.parentNode.removeChild(this.$el);
+    this.$el.parentNode && this.$el.parentNode.removeChild(this.$el);
   }
 
   clearTimer() {

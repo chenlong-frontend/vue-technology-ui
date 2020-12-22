@@ -22,7 +22,7 @@ module.exports = {
     globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json', '.ts'],
+    extensions: ['.js', '.vue', '.json', '.ts', '.tsx'],
     alias: config.alias
   },
   externals: {
@@ -51,10 +51,13 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
-        options: {
-          appendTsSuffixTo: [/\.vue$/]
-        },
+        use: [
+          'babel-loader',
+          {
+            loader: 'ts-loader',
+            options: { appendTsxSuffixTo: [/\.vue$/] }
+          }
+        ],
         exclude: /node_modules/
       },
       {

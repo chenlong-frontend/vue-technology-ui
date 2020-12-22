@@ -58,3 +58,7 @@ export function toObject(arr) {
   }
   return res;
 };
+
+export const generateId = function() {
+  return Math.floor(Math.random() * 10000);
+};
