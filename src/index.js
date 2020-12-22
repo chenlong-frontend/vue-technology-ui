@@ -92,7 +92,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '0.0.6',
+  version: '0.0.7',
   install,
   Scrollbar,
   Row,
