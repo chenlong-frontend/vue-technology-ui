@@ -7,8 +7,8 @@ enum Type {
 
 @Component
 export default class KButton extends Vue {
-  static install: (Vue: any) => void
-  name = "KButton"
+  static componentName = "KButton"
+  componentName = "KButton"
   @Prop() styles:object
   @Prop({default: 'default'}) type: Type
 

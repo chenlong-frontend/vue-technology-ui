@@ -9,9 +9,8 @@ import { Component, Emit, Prop,Vue, Watch, Provide } from 'vue-property-decorato
 
 @Component
 export default class KForm extends Vue {
-  name = 'KForm'
+  static componentName = 'KForm'
   componentName = 'KForm'
-
   @Provide('kForm') 
   kForm = this
 

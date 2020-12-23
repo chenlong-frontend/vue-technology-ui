@@ -35,7 +35,6 @@ import Clickoutside from 'kview-c-ui/src/utils/clickoutside';
   }
 })
 export default  class KSelect extends Emitter {
-  name = 'KSelect'
   @Prop({default: true})appendToBody: boolean
   @Prop({required: true}) value: any
   @Prop({default: '请选择'}) placeholder: string
@@ -58,7 +57,8 @@ export default  class KSelect extends Emitter {
       this.broadcast('SelectDropdown', 'destroyPopper');
     }
   }
-  componentName:string = 'Kselect'
+  static componentName = 'KSelect'
+  componentName = 'KSelect'
   visible: boolean = false
   input:HTMLInputElement
   selectedLabel:string = ''

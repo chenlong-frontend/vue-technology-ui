@@ -50,7 +50,8 @@ enum Type {
 
 @Component
 export default class KDialog extends Popup {
-  name = 'KDialog'
+  static componentName = 'KDialog'
+  componentName = 'KDialog'
 
   @Prop({default: true}) closeBtn: boolean
   @Prop({default: false}) destroyOnClose: boolean

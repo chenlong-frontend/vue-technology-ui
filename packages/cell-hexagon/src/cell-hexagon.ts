@@ -24,7 +24,8 @@ const cell = ({x,y}, {fill, border}, isHover) => `
 
 @Component
 export default class KCellHexagon extends Vue {
-  name = "KCellHexagon"
+  static componentName = "KCellHexagon"
+  componentName = "KCellHexagon"
   @Prop({default: () => {}}) styles:object
   @Prop() svgWidth: number
   @Prop() svgHeight: number

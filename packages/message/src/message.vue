@@ -14,7 +14,7 @@ import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class KMessage extends Vue {
-  name = 'KMessage'
+  static componentName = 'KMessage'
   dangerouslyUseHTMLString = false
   message = ''
   visible = false

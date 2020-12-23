@@ -1,7 +1,7 @@
 import Search from './src/search.vue';
 
 Search.install = function(Vue) {
-  Vue.component(Search.name, Search);
+  Vue.component(Search.componentName, Search);
 };
 
 export default Search

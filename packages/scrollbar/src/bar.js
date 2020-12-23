@@ -3,7 +3,7 @@ import { renderThumbStyle, BAR_MAP } from './util';
 
 /* istanbul ignore next */
 export default {
-  name: 'Bar',
+  componentName: 'Bar',
 
   props: {
     vertical: Boolean,

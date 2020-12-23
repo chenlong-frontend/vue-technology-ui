@@ -1,7 +1,7 @@
 import { Component, Prop, Vue} from 'vue-property-decorator'
 @Component
 export default class KRow extends Vue {
-  name = 'KRow'
+  static componentName = 'KRow'
   componentName = 'KRow'
   @Prop({default: 'div'}) tag: string
   @Prop() gutter: number

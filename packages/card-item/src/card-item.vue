@@ -16,7 +16,8 @@ import { Component, Emit, Prop,Vue, Watch, Inject } from 'vue-property-decorator
 
 @Component
 export default class KCardItem extends Vue {
-  name = 'KCardItem'
+  static componentName = 'KCardItem'
+  componentName = 'KCardItem'
   @Prop({default: 0}) width: string
   @Prop({default: 0}) height: string
   @Prop({default: false}) itemSelected: boolean

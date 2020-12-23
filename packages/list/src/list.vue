@@ -13,7 +13,8 @@ import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
 // TODO hover和点击的颜色 从左到右渐变  左：#003C80   透明度100%     右：081C42 透明度10%
 @Component
 export default class KList extends Vue {
-  name = 'KList'
+  static componentName = 'KList'
+  componentName = 'KList'
   @Prop({default: () => []}) data: any[]
   @Prop({default: 'text'}) field: string
   @Prop({default: 36}) height: number

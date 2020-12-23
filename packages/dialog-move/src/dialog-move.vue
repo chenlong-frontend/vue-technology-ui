@@ -37,7 +37,8 @@ enum TopType {
 
 @Component
 export default class KDialogMove extends Popup {
-  name = 'KDialogMove'
+  static componentName = 'KDialogMove'
+  componentName = 'KDialogMove'
 
   @Prop({default: true}) movable: boolean
   @Prop({default: true}) closeBtn: boolean

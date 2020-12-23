@@ -12,11 +12,11 @@ import Popper from 'kview-c-ui/src/utils/vue-popper'
 
 @Component
 export default class KSelectDropdown extends Popper {
-  name = 'KSelectDropdown'
   referenceElm
   popperElm
   width = ''
-  componentName:string = 'SelectDropdown'
+  static componentName = 'SelectDropdown'
+  componentName = 'SelectDropdown'
   @Prop({default: false}) appendToBody: boolean
 
   get inputWidth () {

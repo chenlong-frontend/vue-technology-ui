@@ -2,7 +2,8 @@ import { Component, Prop, Vue} from 'vue-property-decorator'
 
 @Component
 export default class KEmpty extends Vue {
-  name = "KEmpty"
+  static componentName = "KEmpty"
+  componentName = "KEmpty"
   @Prop({default: ''}) description: string
   @Prop({default: ''}) image: string
 

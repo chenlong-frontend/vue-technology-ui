@@ -20,7 +20,8 @@ const arrowRight = require('./assets/pagination/arrow-right.svg');
 
 @Component
 export default class KPagination extends Vue {
-  name = 'KPagination'
+  static componentName = 'KPagination'
+  componentName = 'KPagination'
   @Prop({default: 0}) total:number
   @Prop({default: 10}) pageSize: number
   @Prop({default: 1}) currentPage: number

@@ -21,6 +21,7 @@ import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class KDividerText extends Vue {
-  name = 'KDividerText'
+  static componentName = 'KDividerText'
+  componentName = 'KDividerText'
 }
 </script>

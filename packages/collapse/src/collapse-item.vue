@@ -16,7 +16,7 @@ import Emitter from 'kview-c-ui/src/utils/emitter';
 
 @Component
 export default class KCollapseItem extends Emitter {
-  name = 'KCollapseItem'
+  static componentName:string = 'KCollapseItem'
   componentName:string = 'KCollapseItem'
   @Prop({default: ''}) title:string
   @Prop({default: ''}) itemName:string

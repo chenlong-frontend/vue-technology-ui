@@ -1,7 +1,7 @@
 import Divider from './src/divider'
 
 Divider.install = function(Vue) {
-  Vue.component(Divider.name, Divider);
+  Vue.component(Divider.componentName, Divider);
 };
 
 

@@ -6,7 +6,7 @@ import { Component, Prop, Vue, Watch} from 'vue-property-decorator'
 
 @Component
 export default class KTooltip extends Popper {
-  name = 'KTooltip'
+  static componentName = 'KTooltip'
   componentName = 'KTooltip'
 
   @Prop({default: 0}) openDelay:number
@@ -25,6 +25,7 @@ export default class KTooltip extends Popper {
   @Prop({default: true}) enterable: boolean
   @Prop({default: 0}) hideAfter: number
   @Prop({default: 0}) tabindex: number
+  @Prop({default: true}) appendToBody: boolean
 
   @Watch('focusing')
   getFocusing (val) {
@@ -89,7 +90,6 @@ export default class KTooltip extends Popper {
   }
 
   mounted() {
-    this.appendToBody = true
     this.referenceElm = this.$el;
     if (this.$el.nodeType === 1) {
       this.$el.setAttribute('aria-describedby', this.tooltipId);

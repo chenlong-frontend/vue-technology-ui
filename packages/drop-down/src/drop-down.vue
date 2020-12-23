@@ -24,7 +24,7 @@
     }
   })
   export default class KDropDown extends Vue{
-    name = 'KDropDown'
+    static componentName = 'KDropDown'
     componentName = 'KDropDown'
 
     visible: boolean = false

@@ -12,21 +12,21 @@ import Emitter  from 'kview-c-ui/src/utils/emitter'
 
 @Component
 export default class KOption extends Emitter {
-  name = 'KOption'
   @Inject('select') select;
   @Prop() label?:string
   @Prop() value?:string
-  componentName:string = 'Koption'
+  static componentName = 'KOption'
+  componentName = 'KOption'
   created() {
     this.select.options.push(this);
-    this.dispatch('Kselect', 'setSelected', {});
+    this.dispatch('KSelect', 'setSelected', {});
   }
 
   get itemSelected () {
     return this.value === this.select.value
   }
   onSelectOptionClick () {
-    this.dispatch('Kselect', 'handleOptionClick', [this, true]);
+    this.dispatch('KSelect', 'handleOptionClick', [this, true]);
   }
 
 }

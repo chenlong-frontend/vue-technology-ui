@@ -11,7 +11,8 @@ import Emitter from 'kview-c-ui/src/utils/emitter'
 
 @Component
 export default class KNumberInput extends Emitter {
-  name = 'KNumberInput'
+  static componentName = 'KNumberInput'
+  componentName = 'KNumberInput'
   @Prop({default: ''}) unit: string
   @Prop({default: ''}) placeholder: string
   @Prop() max: number

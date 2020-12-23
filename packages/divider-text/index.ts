@@ -1,7 +1,7 @@
 import DividerText from './src/divider-text.vue'
 
 DividerText.install = function(Vue) {
-  Vue.component(DividerText.name, DividerText);
+  Vue.component(DividerText.componentName, DividerText);
 };
 
 

@@ -5,9 +5,10 @@ import scrollbarWidth from 'kview-c-ui/src/utils/scrollbar-width';
 import { toObject } from 'kview-c-ui/src/utils/util';
 import Bar from './bar';
 
+// TODO 修改
 /* istanbul ignore next */
 export default {
-  name: 'ElScrollbar',
+  componentName: 'ElScrollbar',
 
   components: { Bar },
 

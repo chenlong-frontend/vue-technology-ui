@@ -8,7 +8,8 @@ enum Type {
 // TODO 从中间到周边渐变。中间：#220000    #190000
 @Component
 export default class KCardShadow extends Vue {
-  name = 'KCardShadow'
+  static componentName = 'KCardShadow'
+  componentName = 'KCardShadow'
   @Prop({default: '240px'}) width: string
   @Prop({default: '200px'}) height: string
   @Prop({default: 'primary'}) type: Type 

@@ -20,8 +20,8 @@ const arrowImg = require('./assets/menu/arrow.svg');
 
 @Component
 export default class KMenuItem extends Vue {
-  name = 'KMenuItem'
-
+  static componentName = 'KMenuItem'
+  componentName = 'KMenuItem'
   arrowImg = arrowImg
   maskEnd = false
 

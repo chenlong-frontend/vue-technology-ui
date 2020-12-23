@@ -34,9 +34,7 @@ module.exports = {
         terserOptions: {
           output: {
             comments: false
-          },
-          keep_classnames: true,
-          keep_fnames: true
+          }
         }
       })
     ]

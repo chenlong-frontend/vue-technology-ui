@@ -10,7 +10,8 @@ import Popper from 'kview-c-ui/src/utils/vue-popper'
 
 @Component
 export default class DropDownContent extends Popper {
-  name = 'ListDropDown'
+  static componentName = 'ListDropDown'
+  componentName = 'ListDropDown'
   referenceElm
   popperElm
   width = '168px'

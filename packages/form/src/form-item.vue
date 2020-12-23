@@ -23,7 +23,7 @@ import {getPropByPath} from 'kview-c-ui/src/utils/util'
 import Emitter from 'kview-c-ui/src/utils/emitter'
 @Component
 export default class KFormItem extends Emitter {
-  name = 'KFormItem'
+  static componentName = 'KFormItem'
   componentName = 'KFormItem'
   @Inject('kForm') kForm
 
@@ -64,6 +64,7 @@ export default class KFormItem extends Emitter {
   }
   get form() {
       let parent = this.$parent;
+      console.log(parent)
       let parentName = parent.componentName;
       while (parentName !== 'KForm') {
         if (parentName === 'KFormItem') {

@@ -77,7 +77,7 @@ const components = [
 
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
-    Vue.component(component.name, component);
+    Vue.component(component.componentName, component);
   });
 
   Vue.use(Loading.directive);
@@ -92,7 +92,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '0.0.7',
+  version: '0.0.8',
   install,
   Scrollbar,
   Row,

@@ -24,7 +24,8 @@ import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class KCardImage extends Vue {
-  name = 'KCardImage'
+  static componentName = 'KCardImage'
+  componentName = 'KCardImage'
 
   @Prop({default: ''})corner: string
   @Prop({default: ''})title: string

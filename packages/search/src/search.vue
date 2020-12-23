@@ -18,8 +18,8 @@ import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class KSearch extends Vue {
-  name = 'KSearch'
-
+  static componentName = 'KSearch'
+  componentName = 'KSearch'
   @Prop({default: '请输入关键词'}) placeholder: string
   @Prop({default: ''}) value: string
   @Prop({default: true}) right: boolean

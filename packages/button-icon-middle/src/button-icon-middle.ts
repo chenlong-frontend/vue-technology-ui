@@ -6,7 +6,8 @@ enum Type {
 
 @Component
 export default class KButtonIconMiddle extends Vue {
-  name = "KButtonIconMiddle"
+  static componentName = "KButtonIconMiddle"
+  componentName = "KButtonIconMiddle"
   @Prop() styles:object
   @Prop({default: 'default'}) type: Type
   @Prop({default: false}) active: boolean

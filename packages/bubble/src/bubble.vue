@@ -14,7 +14,8 @@ import { Component, Emit, Prop,Vue, Watch } from 'vue-property-decorator';
 
 @Component
 export default  class KBubble extends Vue {
-  readonly name = 'KBubble'
+  static componentName = 'KBubble'
+  componentName = 'KBubble'
   @Prop({default: ''}) text: string | string[]
   @Prop({default: () => ({})}) styles: any
   get textList () {

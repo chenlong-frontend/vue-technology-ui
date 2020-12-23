@@ -21,16 +21,16 @@ import Emitter  from 'kview-c-ui/src/utils/emitter'
 
 @Component
 export default class KOptionCard extends Emitter {
-  name = 'KOptionCard'
   @Inject('select') select;
   @Prop() label:string
   @Prop() value?:string
   @Prop({default: 0}) width: string
   @Prop({default: 0}) height: string
-  componentName:string = 'Koption'
+  static componentName = 'KOptionCard'
+  componentName = 'KOptionCard'
   created() {
     this.select.options.push(this);
-    this.dispatch('Kselect', 'setSelected', {});
+    this.dispatch('KSelect', 'setSelected', {});
   }
 
   get itemSelected () {
@@ -45,7 +45,7 @@ export default class KOptionCard extends Emitter {
   }
 
   onSelectOptionClick () {
-    this.dispatch('Kselect', 'handleOptionClick', [this, true]);
+    this.dispatch('KSelect', 'handleOptionClick', [this, true]);
   }
 
 }

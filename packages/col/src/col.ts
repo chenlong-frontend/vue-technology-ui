@@ -1,7 +1,8 @@
 import { Component, Prop, Vue} from 'vue-property-decorator'
 @Component
 export default class KCol extends Vue {
-  name = 'KCol'
+  static componentName = 'KCol'
+  componentName = 'KCol'
   @Prop({default: 24}) span
   @Prop({default: 'div'}) tag
   @Prop() offset:number

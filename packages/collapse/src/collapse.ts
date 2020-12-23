@@ -2,9 +2,8 @@ import { Component, Prop, Vue, Watch, Provide } from 'vue-property-decorator'
 
 @Component
 export default class KCollapse extends Vue {
-  name = 'KCollapse'
-  componentName:string = 'KCollapse'
-
+  static componentName = 'KCollapse'
+  componentName = 'KCollapse'
   @Provide('activeNames') 
   activeNames = {value: ''}
   @Prop() value: string

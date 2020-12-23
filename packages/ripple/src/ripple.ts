@@ -1,7 +1,8 @@
 import { Component, Prop,Vue } from 'vue-property-decorator'
 @Component
 export default class KRipple extends Vue {
-  name = 'KRipple'
+  static componentName = 'KRipple'
+  componentName = 'KRipple'
   @Prop({default: false}) animation: boolean
   onClick(e) {
     this.$emit('click', e)

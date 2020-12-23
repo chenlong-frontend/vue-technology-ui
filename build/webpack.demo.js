@@ -158,13 +158,7 @@ if (isProd) {
     //   parallel: true,
     //   sourceMap: false
     // }),
-    new OptimizeCSSAssetsPlugin({}),
-    new TerserPlugin({
-      terserOptions: {
-        keep_classnames: true,
-        keep_fnames: true
-      }
-    })
+    new OptimizeCSSAssetsPlugin({})
   );
   // https://webpack.js.org/configuration/optimization/#optimizationsplitchunks
   webpackConfig.optimization.splitChunks = {

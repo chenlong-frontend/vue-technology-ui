@@ -8,7 +8,8 @@ const button = (x, style) => `<svg width="${346 + x}px" height="32px" viewBox="0
 
 @Component
 export default class KButtonLarger extends Vue {
-  name = "KButtonLarger"
+  static componentName = "KButtonLarger"
+  componentName = "KButtonLarger"
   @Prop({default: () => {}}) styles:object
   @Prop({default: 'default'}) type: Type
 
