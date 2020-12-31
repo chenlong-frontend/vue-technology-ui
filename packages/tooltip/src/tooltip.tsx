@@ -30,7 +30,6 @@ export default class KTooltip extends Popper {
   @Watch('focusing')
   getFocusing (val) {
     if (val) {
-      console.log(this.placement)
       addClass(this.referenceElm, 'focusing');
     } else {
       removeClass(this.referenceElm, 'focusing');

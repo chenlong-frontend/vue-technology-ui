@@ -7132,7 +7132,6 @@ var tooltip_KTooltip = /** @class */function (_super) {
     }
     KTooltip.prototype.getFocusing = function (val) {
         if (val) {
-            console.log(this.placement);
             addClass(this.referenceElm, 'focusing');
         } else {
             removeClass(this.referenceElm, 'focusing');
@@ -9031,7 +9030,6 @@ var form_itemvue_type_script_lang_ts_KFormItem = /** @class */function (_super) 
     Object.defineProperty(KFormItem.prototype, "form", {
         get: function get() {
             var parent = this.$parent;
-            console.log(parent);
             var parentName = parent.componentName;
             while (parentName !== 'KForm') {
                 if (parentName === 'KFormItem') {

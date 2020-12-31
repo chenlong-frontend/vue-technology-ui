@@ -3,6 +3,7 @@
       <div class="kview-card-item__content">
         <div class="kview-card-item__slot" :class="{'kview-card-item__slot--selected': itemSelected}">
           <img v-if="img && selectedImg" :src="(itemSelected || isHover) ? svgStringToImg(selectedImg):svgStringToImg(img)" alt="picture" />
+          <slot name="img"></slot>
         </div>
         <div class="kview-card-item__title" :class="{'kview-card-item__title--selected': itemSelected}">
           <slot></slot>

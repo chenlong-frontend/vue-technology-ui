@@ -64,7 +64,6 @@ export default class KFormItem extends Emitter {
   }
   get form() {
       let parent = this.$parent;
-      console.log(parent)
       let parentName = parent.componentName;
       while (parentName !== 'KForm') {
         if (parentName === 'KFormItem') {
