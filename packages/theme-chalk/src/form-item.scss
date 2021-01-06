@@ -25,6 +25,9 @@
 
 @include e(label) {
   flex: 1 auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   span {
     color: #ffffff;
     opacity: 0.6;
