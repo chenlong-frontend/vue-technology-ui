@@ -26,3 +26,11 @@ ul, li {
 .#{$namespace}-scroll::-webkit-scrollbar-track {
   background: $--scrollbar-track-background;
 }
+
+.#{$namespace}-scroll-hideX {
+  overflow-x: hidden !important;
+}
+
+.#{$namespace}-scroll-hideY {
+  overflow-y: hidden !important;
+}

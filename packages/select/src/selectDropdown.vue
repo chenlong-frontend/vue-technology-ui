@@ -1,6 +1,6 @@
 <template>
   <div :style="{ width: width }" class="kview-select-dropdown popper">
-    <div class="kview-select-dropdown__container kview-scroll">
+    <div class="kview-select-dropdown__container kview-scroll kview-scroll-hideX">
       <slot></slot> 
     </div>
   </div>
